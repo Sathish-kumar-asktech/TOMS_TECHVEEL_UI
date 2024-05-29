@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const Dummy = () => {
+export const dummy = () => {
   return (
-    <div>Dummy</div>
+    <div>dummy</div>
   )
 }
