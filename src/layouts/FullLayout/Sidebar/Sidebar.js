@@ -75,8 +75,9 @@ const Sidebar = (props) => {
               //{/********SubHeader**********/}
               return (
                 <>
-                  <List component="li" disablePadding key={item.title}>
+                  <List component="li" disablePadding key={index}>
                     <ListItem
+                      key={index}
                       onClick={() => handleClick(index)}
                       button
                       component={NavLink}
@@ -122,8 +123,9 @@ const Sidebar = (props) => {
               //{/********SubHeader**********/}
               return (
                 <>
-                  <List component="li" disablePadding key={item.title}>
+                  <List component="li" disablePadding key={index}>
                     <ListItem
+                    key={index}
                       onClick={() => handleClick(index)}
                       button
                       component={NavLink}
