@@ -1,7 +1,7 @@
 import React from "react";
 //import { Link } from 'react-router-dom';
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import AddToPhotosOutlinedIcon from "@mui/icons-material/AddToPhotosOutlined";
+//import AddToPhotosOutlinedIcon from "@mui/icons-material/AddToPhotosOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 
@@ -20,7 +20,7 @@ import {
 
 import userimg from "../../../assets/images/users/3.jpg";
 
-const Header = (props) => {
+ const Header = (props) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
