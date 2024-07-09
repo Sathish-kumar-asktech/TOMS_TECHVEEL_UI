@@ -53,6 +53,7 @@ const Header = (props) => {
     setAnchorEl5(null);
   };
 
+
   return (
     <AppBar sx={props.sx} elevation={0} className={props.customClass}>
       <Toolbar>
@@ -72,7 +73,7 @@ const Header = (props) => {
 
         <Box flexGrow={1} />
 
-        {/* ------------------------------------------- */}
+   {/* ------------------------------------------- */}
         {/* Profile Dropdown */}
         {/* ------------------------------------------- */}
         <Button
@@ -98,6 +99,7 @@ const Header = (props) => {
             />
           </Box>
         </Button>
+
         <Menu
           id="profile-menu"
           anchorEl={anchorEl4}
@@ -114,7 +116,8 @@ const Header = (props) => {
             },
           }}
         > 
-          <MenuItem onClick={handleClose4}>
+
+<MenuItem onClick={handleClose4}>
             <Avatar
               src={userimg}
               alt={userimg}
@@ -130,7 +133,8 @@ const Header = (props) => {
             >
               My account
             </Box>
-          </MenuItem>
+
+            </MenuItem>
           <Divider />
           <MenuItem onClick={handleClose4}>
             <ListItemIcon>
@@ -150,4 +154,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export default Header;

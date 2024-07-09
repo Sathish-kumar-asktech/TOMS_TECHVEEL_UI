@@ -19,6 +19,9 @@ const Product = lazy(() => import("../components/Masters/Product.js"));
 const Supplier = lazy(() => import("../components/Masters/Supplier.js"));
 const UOM = lazy(() => import("../components/Masters/UOM.js"));
 const Users = lazy(() => import("../components/Masters/Users.js"));
+const Create = lazy(() => import("../components/Masters/Create"));
+const Update = lazy(() => import("../components/Masters/Update"));
+
 
 // form transacations
 const Buyer = lazy(() => import("../components/Transactions/Buyer.js"));
@@ -42,6 +45,8 @@ const ThemeRoutes = [
       { path: "/masters/Supplier", element: <Supplier /> },
       { path: "/masters/UOM", element: <UOM /> },
       { path: "/masters/Users", element: <Users /> },
+      { path: "/masters/Create", element: <Create /> },
+      { path: "/masters/Update/:id", element: <Update /> },
       { path: "/transacation/Buyer", element: <Buyer /> },
       {
         path: "/transacation/SupplierTransacations",
