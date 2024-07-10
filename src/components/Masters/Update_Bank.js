@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 
-function Update() {
+function Update_Bank() {
   const [formData, setFormData] = useState({
     account_no: '',
     account_name: '',
@@ -90,4 +90,4 @@ function Update() {
   );
 }
 
-export default Update;
+export default Update_Bank;

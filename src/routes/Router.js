@@ -1,5 +1,7 @@
 import { lazy } from "react";
 import { Navigate } from "react-router-dom";
+// import Create_Bank from "../components/Masters/Create_Bank.js";
+// import Update_Bank from "../components/Masters/Update_Bank.js";
 
 /****Layouts*****/
 const FullLayout = lazy(() => import("../layouts/FullLayout/FullLayout.js"));
@@ -19,8 +21,8 @@ const Product = lazy(() => import("../components/Masters/Product.js"));
 const Supplier = lazy(() => import("../components/Masters/Supplier.js"));
 const UOM = lazy(() => import("../components/Masters/UOM.js"));
 const Users = lazy(() => import("../components/Masters/Users.js"));
-const Create = lazy(() => import("../components/Masters/Create"));
-const Update = lazy(() => import("../components/Masters/Update"));
+const Create_Bank = lazy(() => import("../components/Masters/Create_Bank"));
+const Update_Bank = lazy(() => import("../components/Masters/Update_Bank"));
 
 
 // form transacations
@@ -45,8 +47,8 @@ const ThemeRoutes = [
       { path: "/masters/Supplier", element: <Supplier /> },
       { path: "/masters/UOM", element: <UOM /> },
       { path: "/masters/Users", element: <Users /> },
-      { path: "/masters/Create", element: <Create /> },
-      { path: "/masters/Update/:id", element: <Update /> },
+      { path: "/masters/Create_Bank", element: <Create_Bank /> },
+      { path: "/masters/Update_Bank/:id", element: <Update_Bank /> },
       { path: "/transacation/Buyer", element: <Buyer /> },
       {
         path: "/transacation/SupplierTransacations",

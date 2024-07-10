@@ -67,7 +67,7 @@ function Bank() {
               '& > :not(style)': { m: 1, width: '25ch' },
             }}
           />
-           <Button variant="contained" color="success" onClick={() => navigate('/masters/Create')} sx={{ width: '70px', height: '58px' }}>ADD</Button>
+           <Button variant="contained" color="success" onClick={() => navigate('/masters/Create_Bank')} sx={{ width: '70px', height: '58px' }}>ADD</Button>
           </div>
     <div>               
     <TableContainer component={Paper}>
@@ -112,7 +112,7 @@ function Bank() {
                        <StyledTableCell align="right">{product.city}</StyledTableCell>
                        <StyledTableCell align="right">{product.address}</StyledTableCell>
                        <StyledTableCell align="right">
-                       <Button variant="contained" color="secondary" onClick={() => navigate(`/masters/Update/${product.id}`)}>Update</Button>
+                       <Button variant="contained" color="secondary" onClick={() => navigate(`/masters/Update_Bank/${product.id}`)}>Update</Button>
                         <Button variant="contained" color="error" onClick={() => handleDelete(product.id)}>Delete</Button>
                         </StyledTableCell>
                     </StyledTableRow>

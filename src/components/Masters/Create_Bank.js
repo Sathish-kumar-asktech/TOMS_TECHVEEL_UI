@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 
-function Create() {
+function Create_Bank() {
   const [id, setId] =useState('')
   const [account_no , setNo] = useState('');
   const [account_name, setName] = useState('');
@@ -75,5 +75,5 @@ function Create() {
   );
 }
 
-export default Create;
+export default Create_Bank;
 
