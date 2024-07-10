@@ -53,6 +53,7 @@ import userimg from "../../../assets/images/users/3.jpg";
     setAnchorEl5(null);
   };
 
+
   return (
     <AppBar sx={props.sx} elevation={0} className={props.customClass}>
       <Toolbar>
@@ -72,7 +73,7 @@ import userimg from "../../../assets/images/users/3.jpg";
 
         <Box flexGrow={1} />
 
-        {/* ------------------------------------------- */}
+   {/* ------------------------------------------- */}
         {/* Profile Dropdown */}
         {/* ------------------------------------------- */}
         <Button
@@ -98,6 +99,7 @@ import userimg from "../../../assets/images/users/3.jpg";
             />
           </Box>
         </Button>
+
         <Menu
           id="profile-menu"
           anchorEl={anchorEl4}
@@ -114,7 +116,8 @@ import userimg from "../../../assets/images/users/3.jpg";
             },
           }}
         > 
-          <MenuItem onClick={handleClose4}>
+
+<MenuItem onClick={handleClose4}>
             <Avatar
               src={userimg}
               alt={userimg}
@@ -130,7 +133,8 @@ import userimg from "../../../assets/images/users/3.jpg";
             >
               My account
             </Box>
-          </MenuItem>
+
+            </MenuItem>
           <Divider />
           <MenuItem onClick={handleClose4}>
             <ListItemIcon>
@@ -150,4 +154,4 @@ import userimg from "../../../assets/images/users/3.jpg";
   );
 };
 
-export default Header;
+export default Header;
