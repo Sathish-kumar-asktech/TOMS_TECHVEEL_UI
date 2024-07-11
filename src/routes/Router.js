@@ -1,9 +1,15 @@
+/* eslint-disable react/jsx-pascal-case */
 import { lazy } from "react";
 import { Navigate } from "react-router-dom";
 import Update from "../components/Masters/Update.js";
 import Home from "../components/Masters/Home.js";
 import Home1 from "../components/Masters/Home1.js";
 import Update1 from "../components/Masters/Update1.js";
+// import Updateproducts from "../components/Masters/updateproducts.js";
+
+
+  import Create_Product from "../components/Masters/product/Create_Product.js";
+import Update_Product from "../components/Masters/product/Update_Product.js";
 
 
 /****Layouts*****/
@@ -20,7 +26,7 @@ const Customer = lazy(() => import("../components/Masters/Customer.js"));
 const PorductCategory = lazy(() =>
   import("../components/Masters/ProductCategory.js")
 );
-const Product = lazy(() => import("../components/Masters/Product.js"));
+const Product = lazy(() => import("../components/Masters/product/Product.js"));
 const Supplier = lazy(() => import("../components/Masters/Supplier.js"));
 const UOM = lazy(() => import("../components/Masters/UOM.js"));
 const Users = lazy(() => import("../components/Masters/Users.js"));
@@ -67,6 +73,13 @@ const ThemeRoutes = [
       { path: "/Update", element: <Update />},
       { path: "/Create1", element: <Create1 />},
       { path: "/Update1", element: <Update1 />},
+
+
+
+      // { path: "/Updateproducts", element: <Updateproducts />},
+
+      { path: "/masters/Create", element: <Create_Product /> },
+       { path: "/masters/Update/:id", element: <Update_Product /> },
     ],
   },
 ];
