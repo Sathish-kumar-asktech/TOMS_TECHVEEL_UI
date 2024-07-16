@@ -20,7 +20,7 @@ export default function Home() {
     }, []);
 
     const fetchData = () => {
-        axios.get("http://localhost:8081/users")
+        axios.get("http://localhost:8082/users")
             .then(res => setData(res.data))
             .catch(err => console.error(err));
     };
