@@ -18,6 +18,7 @@ function Bank() {
   const fetchData = () => {
     axios
       .get("http://localhost:8081/data")
+      .get("http://localhost:8082/data")
       .then(res => setData(res.data))
       .catch(error => console.log(error));
   };
