@@ -17,6 +17,7 @@ function Bank() {
 
   const fetchData = () => {
     axios
+<<<<<<< Updated upstream
       .get("http://localhost:8081/data")
 =======
       .get("http://localhost:8082/data")
