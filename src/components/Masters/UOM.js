@@ -1,13 +1,16 @@
 import React from "react";
-import Typography from "@mui/material/Typography";
+import Home1 from "./Home1";
+import Box from '@mui/material/Box';
 
 const UOM = () => {
   return (
     <div>
-      <Typography variant="h6" color="initial">
-        UOM Master
-      </Typography>
-    </div>
+    <Box sx={{ display: 'flex' }}>
+    <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+      <Home1 />
+    </Box>
+  </Box>
+  </div>
   );
 };
 
